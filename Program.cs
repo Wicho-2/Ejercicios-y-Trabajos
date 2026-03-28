@@ -4,18 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DLJM_Números_impares_del_20_al_150__While_
+namespace DLJM_Factorial__For_
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int i = 21;
-            while (i <= 150)
+            int num = int.Parse(Console.ReadLine());
+            int factorial = 1;
+
+            for (int i = 1; i <= num; i++)
             {
-                Console.WriteLine(i);
-                i += 2;
+                factorial *= i;
             }
+
+            Console.WriteLine("Factorial: " + factorial);
         }
     }
 }
