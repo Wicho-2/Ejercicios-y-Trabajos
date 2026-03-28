@@ -1,24 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DLJM_Tabla_de_Multiplicacion__While_
+namespace DLJM_Números_impares_del_20_al_150__For_
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int num, i = 1;
-
-            Console.Write("Ingresa un número (1-9): ");
-            num = int.Parse(Console.ReadLine());
-
-            while (i <= 10)
+            for (int i = 21; i <= 150; i += 2)
             {
-                Console.WriteLine(num + " x " + i + " = " + (num * i));
-                i++;
+                Console.WriteLine(i);
             }
         }
     }
