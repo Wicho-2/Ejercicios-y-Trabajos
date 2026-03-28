@@ -4,21 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DLJM_Factorial__For_
+namespace DLJM_Promedio_de_alumnos__While_
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int num = int.Parse(Console.ReadLine());
-            int factorial = 1;
+            int n, i = 1;
+            int suma = 0;
 
-            for (int i = 1; i <= num; i++)
+            Console.Write("Ingresa la cantidad de alumnos: ");
+            n = int.Parse(Console.ReadLine());
+
+            while (i <= n)
             {
-                factorial *= i;
+                Console.Write("Ingresa la calificación del alumno " + i + ": ");
+                int cal = int.Parse(Console.ReadLine());
+
+                suma += cal;
+                i++;
             }
 
-            Console.WriteLine("Factorial: " + factorial);
+            double promedio = (double)suma / n;
+
+            Console.WriteLine("El promedio es: " + promedio);
         }
     }
 }
