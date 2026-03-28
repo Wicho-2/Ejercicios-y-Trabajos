@@ -4,20 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DLJM_Numero_del_1_al_10_y_del_10_al_1__for_
+namespace DLJM_Numero_del_1_al_10_y_del_10_al_1__While_
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            for (int i = 1; i <= 10; i++)
+            int i = 1;
+            while (i <= 10)
             {
                 Console.WriteLine(i);
+                i++;
             }
 
-            for (int i = 10; i >= 1; i--)
+            i = 10;
+            while (i >= 1)
             {
                 Console.WriteLine(i);
+                i--;
             }
         }
     }
