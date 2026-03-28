@@ -4,17 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DLJM_Tabla_de_Multiplicacion__for_
+namespace DLJM_Tabla_de_Multiplicacion__While_
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int num = int.Parse(Console.ReadLine());
+            int num, i = 1;
 
-            for (int i = 1; i <= 10; i++)
+            Console.Write("Ingresa un número (1-9): ");
+            num = int.Parse(Console.ReadLine());
+
+            while (i <= 10)
             {
                 Console.WriteLine(num + " x " + i + " = " + (num * i));
+                i++;
             }
         }
     }
